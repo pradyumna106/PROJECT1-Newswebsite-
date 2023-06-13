@@ -2,9 +2,6 @@ const API_KEY = "0d6497ee0bc74accb24601edd78f6833"
 const url = "https://newsapi.org/v2/everything?q="
 
 
-function reload() {
-    window.location.reload();
-}
 
 async function fetchData(query){
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
