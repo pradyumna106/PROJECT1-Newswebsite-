@@ -1,7 +1,6 @@
 const API_KEY = "0d6497ee0bc74accb24601edd78f6833"
 const url = "https://newsapi.org/v2/everything?q="
 
-window.addEventListener("load", () => fetchNews("world"));
 
 function reload() {
     window.location.reload();
@@ -70,7 +69,7 @@ searchBtnMobile.addEventListener("submit",async(e)=>{
     renderMain(data.articles)
 })
 
-window.addEventListener("load", () => fetchNews("world"));
+
 async function Search(query){
     const data = await fetchData(query)
     renderMain(data.articles)
